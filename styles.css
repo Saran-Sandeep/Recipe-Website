@@ -9,10 +9,9 @@
 }
 
 .container-body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   font-family: "Roboto";
-  overflow-x: none;
 }
 
 li {
