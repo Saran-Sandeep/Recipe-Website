@@ -12,6 +12,7 @@
   width: 100%;
   height: auto;
   font-family: "Roboto";
+  background-color: var(--color-gray-light);
 }
 
 li {
@@ -232,9 +233,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.btn-read-more {
 }
 
 /* Footer */

@@ -1,0 +1,124 @@
+{
+  "recipes": [
+    {
+      "name": "Butter Chicken",
+      "description": "A creamy and delicious chicken dish cooked in tomato-based gravy with a blend of Indian spices.",
+      "ingredients": "Chicken, butter, tomato, cream, spices",
+      "cookingTime": "45 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Biryani",
+      "description": "Aromatic rice cooked with layers of spiced meat or vegetables, garnished with fried onions and coriander.",
+      "ingredients": "Rice, meat/vegetables, saffron, spices",
+      "cookingTime": "1 hour",
+      "prepTime": "30 minutes",
+      "serves": 5
+    },
+    {
+      "name": "Masala Dosa",
+      "description": "A crispy rice and lentil crepe stuffed with spicy mashed potatoes, served with chutney and sambar.",
+      "ingredients": "Rice, lentils, potatoes, spices",
+      "cookingTime": "30 minutes",
+      "prepTime": "10 minutes",
+      "serves": 3
+    },
+    {
+      "name": "Paneer Butter Masala",
+      "description": "Soft cubes of paneer in a rich, creamy, and mildly spiced tomato-based curry.",
+      "ingredients": "Paneer, butter, tomato, cream, spices",
+      "cookingTime": "35 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Chole Bhature",
+      "description": "Spicy chickpea curry served with deep-fried bread (bhature), a North Indian favorite.",
+      "ingredients": "Chickpeas, flour, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Rogan Josh",
+      "description": "Aromatic lamb curry with flavors of Kashmiri spices and yogurt.",
+      "ingredients": "Lamb, yogurt, Kashmiri spices",
+      "cookingTime": "50 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Idli and Sambar",
+      "description": "Steamed rice cakes served with a spicy and tangy lentil soup.",
+      "ingredients": "Rice, lentils, spices, vegetables",
+      "cookingTime": "40 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Rajma Chawal",
+      "description": "Spiced kidney bean curry served with steamed rice, a wholesome and comforting meal.",
+      "ingredients": "Kidney beans, tomato, onion, spices",
+      "cookingTime": "1 hour",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Palak Paneer",
+      "description": "Spinach and paneer cooked in a mildly spiced, creamy curry.",
+      "ingredients": "Spinach, paneer, cream, spices",
+      "cookingTime": "30 minutes",
+      "prepTime": "10 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Pav Bhaji",
+      "description": "A spicy vegetable mash served with buttered buns, garnished with onions and lemon.",
+      "ingredients": "Mixed vegetables, butter, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Pani Puri",
+      "description": "Small crispy puris filled with spicy tamarind water, potato, and chickpeas.",
+      "ingredients": "Puri, tamarind, spices, potatoes",
+      "cookingTime": "20 minutes",
+      "prepTime": "10 minutes",
+      "serves": 6
+    },
+    {
+      "name": "Samosa",
+      "description": "Deep-fried pastry filled with spicy mashed potatoes and peas.",
+      "ingredients": "Flour, potatoes, peas, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Dal Tadka",
+      "description": "Yellow lentils tempered with cumin, garlic, and ghee for a flavorful side dish.",
+      "ingredients": "Lentils, garlic, ghee, spices",
+      "cookingTime": "25 minutes",
+      "prepTime": "5 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Malai Kofta",
+      "description": "Rich and creamy curry made with fried vegetable or paneer dumplings.",
+      "ingredients": "Paneer, cream, spices, flour",
+      "cookingTime": "50 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Tandoori Chicken",
+      "description": "Charcoal-grilled chicken marinated in yogurt and spices.",
+      "ingredients": "Chicken, yogurt, spices",
+      "cookingTime": "50 minutes",
+      "prepTime": "25 minutes",
+      "serves": 4
+    }
+  ]
+}
