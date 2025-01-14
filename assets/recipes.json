@@ -1,0 +1,139 @@
+{
+  "recipes": [
+    {
+      "name": "Butter Chicken",
+      "img": "assets/images/butter_chicken.png",
+      "description": "A creamy and delicious chicken dish cooked in tomato-based gravy with a blend of Indian spices.",
+      "ingredients": "Chicken, butter, tomato, cream, spices",
+      "cookingTime": "45 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Biryani",
+      "img": "assets/images/biryani.png",
+      "description": "Aromatic rice cooked with layers of spiced meat or vegetables, garnished with fried onions and coriander.",
+      "ingredients": "Rice, meat/vegetables, saffron, spices",
+      "cookingTime": "1 hour",
+      "prepTime": "30 minutes",
+      "serves": 5
+    },
+    {
+      "name": "Masala Dosa",
+      "img": "assets/images/masala_dosa.png",
+      "description": "A crispy rice and lentil crepe stuffed with spicy mashed potatoes, served with chutney and sambar.",
+      "ingredients": "Rice, lentils, potatoes, spices",
+      "cookingTime": "30 minutes",
+      "prepTime": "10 minutes",
+      "serves": 3
+    },
+    {
+      "name": "Paneer Butter Masala",
+      "img": "assets/images/paneer_butter_masala.png",
+      "description": "Soft cubes of paneer in a rich, creamy, and mildly spiced tomato-based curry.",
+      "ingredients": "Paneer, butter, tomato, cream, spices",
+      "cookingTime": "35 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Chole Bhature",
+      "img": "assets/images/chole_bhature.png",
+      "description": "Spicy chickpea curry served with deep-fried bread (bhature), a North Indian favorite.",
+      "ingredients": "Chickpeas, flour, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Rogan Josh",
+      "img": "assets/images/rogan_josh.png",
+      "description": "Aromatic lamb curry with flavors of Kashmiri spices and yogurt.",
+      "ingredients": "Lamb, yogurt, Kashmiri spices",
+      "cookingTime": "50 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Idli and Sambar",
+      "img": "assets/images/idli_and_sambar.png",
+      "description": "Steamed rice cakes served with a spicy and tangy lentil soup.",
+      "ingredients": "Rice, lentils, spices, vegetables",
+      "cookingTime": "40 minutes",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Rajma Chawal",
+      "img": "assets/images/rajma_chawal.png",
+      "description": "Spiced kidney bean curry served with steamed rice, a wholesome and comforting meal.",
+      "ingredients": "Kidney beans, tomato, onion, spices",
+      "cookingTime": "1 hour",
+      "prepTime": "15 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Palak Paneer",
+      "img": "assets/images/palak_paneer.png",
+      "description": "Spinach and paneer cooked in a mildly spiced, creamy curry.",
+      "ingredients": "Spinach, paneer, cream, spices",
+      "cookingTime": "30 minutes",
+      "prepTime": "10 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Pav Bhaji",
+      "img": "assets/images/pav_bhaji.png",
+      "description": "A spicy vegetable mash served with buttered buns, garnished with onions and lemon.",
+      "ingredients": "Mixed vegetables, butter, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Pani Puri",
+      "img": "assets/images/pani_puri.png",
+      "description": "Small crispy puris filled with spicy tamarind water, potato, and chickpeas.",
+      "ingredients": "Puri, tamarind, spices, potatoes",
+      "cookingTime": "20 minutes",
+      "prepTime": "10 minutes",
+      "serves": 6
+    },
+    {
+      "name": "Samosa",
+      "img": "assets/images/samosa.png",
+      "description": "Deep-fried pastry filled with spicy mashed potatoes and peas.",
+      "ingredients": "Flour, potatoes, peas, spices",
+      "cookingTime": "40 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Dal Tadka",
+      "img": "assets/images/dal_tadka.png",
+      "description": "Yellow lentils tempered with cumin, garlic, and ghee for a flavorful side dish.",
+      "ingredients": "Lentils, garlic, ghee, spices",
+      "cookingTime": "25 minutes",
+      "prepTime": "5 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Malai Kofta",
+      "img": "assets/images/malai_kofta.png",
+      "description": "Rich and creamy curry made with fried vegetable or paneer dumplings.",
+      "ingredients": "Paneer, cream, spices, flour",
+      "cookingTime": "50 minutes",
+      "prepTime": "20 minutes",
+      "serves": 4
+    },
+    {
+      "name": "Tandoori Chicken",
+      "img": "assets/images/tandoori_chicken.png",
+      "description": "Charcoal-grilled chicken marinated in yogurt and spices.",
+      "ingredients": "Chicken, yogurt, spices",
+      "cookingTime": "50 minutes",
+      "prepTime": "25 minutes",
+      "serves": 4
+    }
+  ]
+}
