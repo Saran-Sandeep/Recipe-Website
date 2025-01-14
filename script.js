@@ -15,6 +15,7 @@ const generate_recipe_cards = (recipes) => {
     card.classList.add("recipe-card");
 
     card.innerHTML = `
+      <img src="${recipe.img}" alt="recipe image"></img>
       <h3>${recipe.name}</h3>
       <p>${recipe.description}</p>
       <ul>
@@ -23,7 +24,7 @@ const generate_recipe_cards = (recipes) => {
         <li><strong>Cooking Time:</strong> ${recipe.cookingTime}</li>
         <li><strong>Serves:</strong> ${recipe.serves}</li>
       </ul>
-      <button class="btn btn-check-recipe" data-name="${recipe.name}" data-description="${recipe.description}" data-ingredients="${recipe.ingredients}"
+      <button class="btn btn-check-recipe" data-img="${recipe.img}" data-name="${recipe.name}" data-description="${recipe.description}" data-ingredients="${recipe.ingredients}"
           data-prepTime="${recipe.prepTime}" data-cookingTime="${recipe.cookingTime}" data-serves="${recipe.serves}">Check recipe</button>
     `;
 
@@ -32,6 +33,7 @@ const generate_recipe_cards = (recipes) => {
     const btnOpenModal = card.querySelector(".btn-check-recipe");
     btnOpenModal.addEventListener("click", (event) => {
       const recipeData = {
+        img: event.target.getAttribute("data-img"),
         name: event.target.getAttribute("data-name"),
         description: event.target.getAttribute("data-description"),
         ingredients: event.target.getAttribute("data-ingredients"),
@@ -49,6 +51,7 @@ const openModal = (recipeData) => {
 
   const modalContent = modal.querySelector(".modal-content");
   modalContent.innerHTML = `
+   <img src="${recipeData.img}" alt="recipe image"></img>
    <h3>${recipeData.name}</h3>
     <p>${recipeData.description}</p>
     <ul>
