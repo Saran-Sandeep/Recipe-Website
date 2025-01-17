@@ -67,7 +67,11 @@ li {
   display: flex;
   gap: var(--gap, 1rem);
 }
-
+.flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--gap, 1rem);
+}
 .hidden {
   display: none;
 }
@@ -98,13 +102,23 @@ li {
 .heading-xs {
   font-size: 1.5rem;
 }
-
 .heading-sm {
   font-size: 1.75rem;
 }
-
 .heading-md {
   font-size: 2rem;
+}
+.heading-lg {
+  font-size: 2.125rem;
+}
+.heading-xl {
+  font-size: 2.25rem;
+}
+.heading-xxl {
+  font-size: 2.75rem;
+}
+.heading-xxxl {
+  font-size: 3rem;
 }
 
 /* Font Weight */
@@ -133,7 +147,7 @@ li {
 }
 
 /* Buttons */
-
+/* 
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -152,7 +166,35 @@ li {
   background-color: var(--color-white);
   color: var(--color-secondary-dark);
   border: 1px solid var(--color-secondary-dark);
+} */
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(251, 31, 96, 0.4); /* Adds a glowing effect */
+}
+
+.btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(251, 31, 96, 0.3); /* Slightly reduce the shadow on click */
+}
+
 /* Header */
 
 .header {
@@ -192,7 +234,32 @@ li {
 }
 
 /* Main */
-.recipe-container {
+
+/* Hero Section */
+.container-hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/images/hero-bg.jpg") no-repeat center center/cover;
+}
+.content-hero {
+  width: 80vw;
+  gap: 5rem;
+  color: var(--color-white);
+}
+.content-hero p {
+  max-width: 50%;
+}
+.content-hero .btn-start-exploring {
+  max-width: fit-content;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/*Card Section*/
+.container-recipe {
   margin: auto;
   width: 80vw;
   flex-wrap: wrap;
@@ -231,13 +298,7 @@ li {
 
 .recipe-card p {
   font-size: 1rem;
-}
-
-.recipe-card ul {
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  overflow: hidden;
 }
 
 /* Footer */
@@ -282,6 +343,7 @@ li {
   background-color: var(--color-white);
   box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.1);
   max-width: 40%;
+  position: relative;
 }
 
 .modal-content img {
@@ -295,4 +357,17 @@ li {
   display: flex;
   flex-flow: column wrap;
   gap: 1rem;
+}
+
+.modal-content .btn-close-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: fit-content;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

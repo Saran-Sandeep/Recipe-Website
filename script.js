@@ -1,5 +1,8 @@
+const recipeImageURL = "assets/images/recipe-images";
+const recipeDataURL = "assets/recipes.json";
+
 const fetchData = () => {
-  fetch("assets/recipes.json")
+  fetch(recipeDataURL)
     .then((response) => response.json())
     .then((data) => {
       generate_recipe_cards(data.recipes);
@@ -8,7 +11,7 @@ const fetchData = () => {
 };
 
 const generate_recipe_cards = (recipes) => {
-  const recipeContainer = document.getElementById("recipe-container");
+  const recipeContainer = document.getElementById("container-recipe");
 
   recipes.forEach((recipe) => {
     const card = document.createElement("div");
@@ -18,19 +21,13 @@ const generate_recipe_cards = (recipes) => {
       <img src="${recipe.img}" alt="recipe image"></img>
       <h3>${recipe.name}</h3>
       <p>${recipe.description}</p>
-      <ul>
-        <li><strong>Ingredients:</strong> ${recipe.ingredients}</li>
-        <li><strong>Prep Time:</strong> ${recipe.prepTime}</li>
-        <li><strong>Cooking Time:</strong> ${recipe.cookingTime}</li>
-        <li><strong>Serves:</strong> ${recipe.serves}</li>
-      </ul>
-      <button class="btn btn-check-recipe" data-img="${recipe.img}" data-name="${recipe.name}" data-description="${recipe.description}" data-ingredients="${recipe.ingredients}"
-          data-prepTime="${recipe.prepTime}" data-cookingTime="${recipe.cookingTime}" data-serves="${recipe.serves}">Check recipe</button>
+      <button class="btn btn-view-more" data-img="${recipe.img}" data-name="${recipe.name}" data-description="${recipe.description}" data-ingredients="${recipe.ingredients}"
+          data-prepTime="${recipe.prepTime}" data-cookingTime="${recipe.cookingTime}" data-serves="${recipe.serves}">View More</button>
     `;
 
     recipeContainer.appendChild(card);
 
-    const btnOpenModal = card.querySelector(".btn-check-recipe");
+    const btnOpenModal = card.querySelector(".btn-view-more");
     btnOpenModal.addEventListener("click", (event) => {
       const recipeData = {
         img: event.target.getAttribute("data-img"),
@@ -51,6 +48,7 @@ const openModal = (recipeData) => {
 
   const modalContent = modal.querySelector(".modal-content");
   modalContent.innerHTML = `
+  <button class="btn btn-close-modal"><i class="fa-solid fa-xmark fa-2xl"></i></button>
    <img src="${recipeData.img}" alt="recipe image"></img>
    <h3>${recipeData.name}</h3>
     <p>${recipeData.description}</p>
@@ -60,7 +58,7 @@ const openModal = (recipeData) => {
       <li><strong>Cooking Time:</strong> ${recipeData.cookingTime}</li>
       <li><strong>Serves:</strong> ${recipeData.serves}</li>
     </ul>
-    <button class="btn btn-close-modal">Close Modal</button>
+    <button class="btn btn-view-recipe">View full recipe</button>
   `;
 
   modal.classList.remove("hidden");
