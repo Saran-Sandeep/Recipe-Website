@@ -10,7 +10,6 @@ const loadHTML = (url, elementId) => {
 };
 
 window.onload = () => {
-  console.log("hello");
   loadHTML("./common/header.html", "header");
   loadHTML("./common/footer.html", "footer");
 };

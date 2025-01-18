@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | The Dhaaba</title>
-    <link rel="stylesheet" href="./../global.css" />
+    <link rel="stylesheet" href="about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -14,13 +14,13 @@
     />
   </head>
   <body>
-    <header id="header"></header>
     <div class="container-body">
+      <header id="header"></header>
       <!-- About Section -->
       <main>
-        <section class="container-about flex-column text-center">
-          <div class="content-about">
-            <h1 class="heading-xxxl font-bold">About The Dhaaba</h1>
+        <div class="container-about">
+          <div class="content-about flex-column center-ele">
+            <h1 class="heading-xxxl">About The Dhaaba</h1>
             <p class="text-lg">
               Welcome to <strong>The Dhaaba</strong>! Our mission is to bring
               the joy of cooking right to your fingertips. With easy-to-follow
@@ -32,7 +32,7 @@
           <div class="about-highlights flex">
             <div class="highlight text-center">
               <i
-                class="fa-solid fa-utensils fa-2xl"
+                class="fa-solid fa-utensils fa-3x"
                 style="color: var(--color-primary)"
               ></i>
               <h3 class="heading-md font-semibold">Diverse Recipes</h3>
@@ -44,7 +44,7 @@
 
             <div class="highlight text-center">
               <i
-                class="fa-solid fa-seedling fa-2xl"
+                class="fa-solid fa-seedling fa-3x"
                 style="color: var(--color-secondary)"
               ></i>
               <h3 class="heading-md font-semibold">Fresh Ingredients</h3>
@@ -56,7 +56,7 @@
 
             <div class="highlight text-center">
               <i
-                class="fa-solid fa-heart fa-2xl"
+                class="fa-solid fa-heart fa-3x"
                 style="color: var(--color-accent1)"
               ></i>
               <h3 class="heading-md font-semibold">Passion for Cooking</h3>
@@ -66,14 +66,14 @@
               </p>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="team-section text-center">
-          <h2 class="heading-xl font-semibold">Meet Our Team</h2>
+        <div class="team-section text-center">
+          <h2 class="heading-xl">Meet Our Team</h2>
           <div class="team-members flex">
-            <div class="team-member text-center">
+            <div class="team-member">
               <img
-                src="../assets/images/team1.jpg"
+                src="../assets/images/team1.jpeg"
                 alt="Team Member 1"
                 class="team-photo"
               />
@@ -81,9 +81,9 @@
               <p>Founder & Head Chef</p>
             </div>
 
-            <div class="team-member text-center">
+            <div class="team-member">
               <img
-                src="../assets/images/team2.jpg"
+                src="../assets/images/team1.jpeg"
                 alt="Team Member 2"
                 class="team-photo"
               />
@@ -91,9 +91,9 @@
               <p>Content Creator</p>
             </div>
 
-            <div class="team-member text-center">
+            <div class="team-member">
               <img
-                src="../assets/images/team3.jpg"
+                src="../assets/images/team1.jpeg"
                 alt="Team Member 3"
                 class="team-photo"
               />
@@ -101,10 +101,10 @@
               <p>Food Photographer</p>
             </div>
           </div>
-        </section>
+        </div>
       </main>
+      <footer id="footer"></footer>
     </div>
-    <footer id="footer"></footer>
     <script src="common.js"></script>
   </body>
 </html>
