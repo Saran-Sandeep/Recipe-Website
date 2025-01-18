@@ -268,8 +268,8 @@ li {
 /* Header */
 header .container-header {
   width: 100%;
-  min-height: 80px;
-  padding: 0 10vw;
+  /* min-height: 80px; */
+  padding: 1rem 10vw;
   background-color: var(--color-primary);
   justify-content: space-between;
   align-items: center;

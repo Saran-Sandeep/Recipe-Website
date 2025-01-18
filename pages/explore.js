@@ -1,13 +1,27 @@
 const recipeImageURL = "./../assets/images/recipe-images";
 const recipeDataURL = "./../assets/recipes.json";
 
-const fetchData = () => {
-  fetch(recipeDataURL)
-    .then((response) => response.json())
-    .then((data) => {
-      generate_recipe_cards(data.recipes);
-    })
-    .catch((error) => console.log(error));
+// const loadDataFromJson = () => {
+//   fetch(recipeDataURL)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       generate_recipe_cards(data.recipes);
+//     })
+//     .catch((error) => console.log(error));
+// };
+
+const loadDataFromJson = async () => {
+  try {
+    const response = await fetch(recipeDataURL);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data.recipes; // Return the recipes directly
+  } catch (error) {
+    console.error(error);
+    return []; // Return an empty array in case of an error
+  }
 };
 
 const generate_recipe_cards = (recipes) => {
@@ -71,5 +85,50 @@ const openModal = (recipeData) => {
   });
 };
 
-// function calls
-fetchData();
+// Search for recipes
+const searchRecipes = async () => {
+  const query = document.getElementById("input-search").value.toLowerCase();
+  console.log("qury : " + query);
+  try {
+    const recipes = await loadDataFromJson();
+    console.log(recipes);
+    const filteredRecipes = recipes.filter((recipe) =>
+      recipe.name.toLowerCase().includes(query)
+    );
+
+    console.log(filteredRecipes);
+    renderRecipes(filteredRecipes);
+  } catch (error) {
+    console.error("Error in searching recipes:", error);
+  }
+};
+
+// Render recipes based on search value
+const renderRecipes = (recipes) => {
+  const container = document.getElementById("container-recipe");
+  container.innerHTML = "";
+
+  if (recipes.length === 0) {
+    container.innerHTML = "<p class='text-lg'>No recipes found</p>";
+    return;
+  }
+
+  generate_recipe_cards(recipes);
+};
+
+// Event listener for search button
+document
+  .getElementById("input-search")
+  .addEventListener("input", searchRecipes);
+
+// window.onload = () => {
+//   loadDataFromJson();
+// };
+
+const recipes = loadDataFromJson()
+  .then((recipes) => {
+    generate_recipe_cards(recipes);
+  })
+  .catch((error) => {
+    console.error("Failed to load recipes:", error);
+  });
