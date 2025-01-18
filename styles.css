@@ -1,11 +1,73 @@
 /* Reset */
 
+/* 1. Use a more-intuitive box-sizing model */
+/* 2. Remove default margin */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  color: inherit;
 }
 
 .container-body {
@@ -195,61 +257,56 @@ li {
   box-shadow: 0 4px 10px rgba(251, 31, 96, 0.3); /* Slightly reduce the shadow on click */
 }
 
-/* Header */
+/* Main */
 
-.header {
-  min-height: 80px;
-  padding: 0 8rem;
-  background-color: var(--color-primary);
+/* Hero Header */
+.container-hero-header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("assets/images/hero-bg.jpg") no-repeat center center/cover;
+  padding: 1rem 0;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Header */
+.container-header {
+  width: 80vw;
+  padding: 1rem 0;
+  color: var(--color-white);
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
-
-.header .container-icon {
-  align-items: center;
+.container-header .icon {
+  gap: 1.125rem;
 }
-
-.header .double-border {
-  border: 2px solid var(--color-white);
-  border-radius: 2rem;
-  padding: 6px;
+.container-header .icon .circle-border {
+  border-radius: 50%;
+  border: solid 2px var(--color-white);
+  padding: 1rem;
+  transition: border 0.3s;
 }
-
-.header .icon {
-  color: var(--color-white);
-  border: 2px dotted var(--color-white);
-  border-radius: 2rem;
-  padding: 12px;
-  aspect-ratio: 1;
+.container-header .icon .circle-border:hover {
+  border: solid 2px var(--color-secondary);
 }
-
-.header a {
-  color: var(--color-white);
-}
-
-.header .primary-navigation {
+.container-header .primary-navigation {
   gap: 2rem;
 }
 
-/* Main */
-
 /* Hero Section */
 .container-hero {
-  height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/hero-bg.jpg") no-repeat center center/cover;
+  padding: 2rem 0;
 }
 .content-hero {
   width: 80vw;
-  gap: 5rem;
+  gap: 3rem;
   color: var(--color-white);
 }
 .content-hero p {
   max-width: 50%;
 }
 .content-hero .btn-start-exploring {
+  margin-top: 1rem;
   max-width: fit-content;
   font-size: 1.25rem;
   display: flex;

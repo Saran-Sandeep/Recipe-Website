@@ -22,28 +22,28 @@
   </head>
   <body>
     <div class="container-body">
-      <header class="header flex">
-        <div class="container-icon flex">
-          <div class="double-border">
-            <span><i class="icon fa-solid fa-utensils text-xl"></i></span>
+      <section class="hero-header">
+        <div class="container-hero-header flex-column">
+          <div class="container-header flex">
+            <div class="icon center-ele">
+              <span class="circle-border"
+                ><i class="icon fa-solid fa-utensils fa-xl"></i
+              ></span>
+              <a href="#" class="font-semibold underline-hover heading-sm"
+                >THE DHAABA</a
+              >
+            </div>
+            <nav>
+              <ul class="primary-navigation flex">
+                <li><a href="#" class="text-xl underline-hover">Home</a></li>
+                <li><a href="#" class="text-xl underline-hover">About</a></li>
+                <li>
+                  <a href="#" class="text-xl underline-hover">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <a href="#" class="font-semibold underline-hover heading-sm"
-            >THE DHAABA</a
-          >
-        </div>
-
-        <nav>
-          <ul class="primary-navigation flex">
-            <li><a href="#" class="text-xl underline-hover">Home</a></li>
-            <li><a href="#" class="text-xl underline-hover">About</a></li>
-            <li><a href="#" class="text-xl underline-hover">Contact Us</a></li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero">
-          <div class="container-hero center-ele">
+          <div class="container-hero">
             <div class="content-hero flex-column">
               <h1 class="heading-xxxl">Discover Delicious Recipes</h1>
               <p class="text-xl">
@@ -51,12 +51,16 @@
                 right at your home!
               </p>
               <button class="btn btn-start-exploring">
-                Start Exploring <i class="fa-solid fa-angles-right"></i>
+                <a href="pages/explore.html"
+                  >Start Exploring <i class="fa-solid fa-angles-right"></i
+                ></a>
               </button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
+      <main>
         <div id="container-recipe" class="container-recipe flex"></div>
         <div class="myModal hidden">
           <div class="modal-content"></div>
