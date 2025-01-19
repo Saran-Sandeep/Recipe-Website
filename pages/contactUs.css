@@ -1,0 +1,63 @@
+@import url(./../global.css);
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-section h1 {
+  font-size: 2rem;
+  color: #323437;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #646669;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--color-text-black);
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid var(--color-text-black);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  color: #323437;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #646669;
+}
