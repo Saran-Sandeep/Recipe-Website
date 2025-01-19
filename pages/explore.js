@@ -1,15 +1,6 @@
 const recipeImageURL = "./../assets/images/recipe-images";
 const recipeDataURL = "./../assets/recipes.json";
 
-// const loadDataFromJson = () => {
-//   fetch(recipeDataURL)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       generate_recipe_cards(data.recipes);
-//     })
-//     .catch((error) => console.log(error));
-// };
-
 const loadDataFromJson = async () => {
   try {
     const response = await fetch(recipeDataURL);
@@ -87,16 +78,13 @@ const openModal = (recipeData) => {
 
 // Search for recipes
 const searchRecipes = async () => {
-  const query = document.getElementById("input-search").value.toLowerCase();
-  console.log("qury : " + query);
+  const query = document.getElementById("search-input").value.toLowerCase();
   try {
     const recipes = await loadDataFromJson();
-    console.log(recipes);
     const filteredRecipes = recipes.filter((recipe) =>
       recipe.name.toLowerCase().includes(query)
     );
 
-    console.log(filteredRecipes);
     renderRecipes(filteredRecipes);
   } catch (error) {
     console.error("Error in searching recipes:", error);
@@ -109,7 +97,8 @@ const renderRecipes = (recipes) => {
   container.innerHTML = "";
 
   if (recipes.length === 0) {
-    container.innerHTML = "<p class='text-lg'>No recipes found</p>";
+    container.innerHTML =
+      "<p class='text-xl text-center' style='width:100%'>No recipes found</p>";
     return;
   }
 
@@ -118,12 +107,8 @@ const renderRecipes = (recipes) => {
 
 // Event listener for search button
 document
-  .getElementById("input-search")
+  .getElementById("search-input")
   .addEventListener("input", searchRecipes);
-
-// window.onload = () => {
-//   loadDataFromJson();
-// };
 
 const recipes = loadDataFromJson()
   .then((recipes) => {

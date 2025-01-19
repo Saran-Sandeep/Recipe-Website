@@ -15,28 +15,28 @@
     />
   </head>
   <body>
-    <header id="header"></header>
-    <main>
-      <div class="container-search-bar">
-        <input
-          type="text"
-          name="input-search"
-          id="input-search"
-          placeholder="Search for recipes"
-        />
-        <button type="submit" class="btn btn-search">
-          <i class="fa-solid fa-search"></i>
-        </button>
-      </div>
+    <div class="container-body">
+      <header id="header"></header>
+      <main>
+        <div class="container-search-bar">
+          <input
+            type="text"
+            name="search-input"
+            id="search-input"
+            placeholder="Search for recipes..."
+          />
+          <button type="submit" class="btn btn-search">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </button>
+        </div>
 
-      <div class="container-search-ele center-ele"></div>
-
-      <div id="container-recipe" class="container-recipe flex"></div>
-      <div class="myModal hidden">
-        <div class="modal-content"></div>
-      </div>
-    </main>
-    <footer id="footer"></footer>
+        <div id="container-recipe" class="container-recipe flex"></div>
+        <div class="myModal hidden">
+          <div class="modal-content"></div>
+        </div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
 
     <script src="explore.js"></script>
     <script src="common.js"></script>
